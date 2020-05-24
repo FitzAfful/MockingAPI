@@ -1,8 +1,8 @@
-import FluentSQLite
+import FluentPostgreSQL
 import Vapor
 
-final class Employee: SQLiteModel {
-    typealias Database = SQLiteDatabase
+final class Employee: PostgreSQLModel {
+    typealias Database = PostgreSQLDatabase
 
     var id: Int?
     var employeeName: String
